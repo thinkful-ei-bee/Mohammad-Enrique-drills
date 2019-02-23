@@ -8,7 +8,7 @@ function pictureChanger(){
         const newSrc = $(this).find('img').attr('src');
         const newAlt = $(this).find('img').attr('alt');
         
-        $('.hero').attr('src', newSrc).attr('alt', newAlt);
+        $('.hero img').attr('src', newSrc).attr('alt', newAlt);
 
     });
     
