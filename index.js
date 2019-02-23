@@ -4,7 +4,7 @@
 /*global $ */
 'use strict';
 function pictureChanger(){
-    $('.thumbnail').click(event =>{
+    $('.thumbnail').on('click', function(event){
         const newSrc = $(this).find('img').attr('src');
         const newAlt = $(this).find('img').attr('alt');
         
