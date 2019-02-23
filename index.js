@@ -3,6 +3,15 @@
 //image should also update its alt attribute. To test keyboard interactivity, you can Tab to one of the thumbnails and press the Enter key.
 /*global $ */
 'use strict';
-$(function(){
+function pictureChanger(){
+    $('.thumbnail').click(event =>{
+        const newSrc = $(this).find('img').attr('src');
+        const newAlt = $(this).find('img').attr('alt');
+        
+        $('.hero').attr('src', newSrc).attr('alt', newAlt);
+
+    });
     
-});
+};
+
+$(pictureChanger);
