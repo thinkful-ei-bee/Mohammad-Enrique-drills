@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif
-  }
-  
+  }  
   main {
     min-width: 250px;
     max-width: 960px;
