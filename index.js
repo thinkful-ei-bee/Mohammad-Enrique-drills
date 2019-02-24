@@ -4,6 +4,7 @@
 
 /*global $ */
 'use strict';
+
 $(function(){
   $('.thumbnail').on('click', function() {
     var clickedImage = $(this).find('img').clone();
@@ -16,3 +17,17 @@ $(function(){
   });
 
 });
+
+function pictureChanger(){
+  $('.thumbnail').on('click', function(event){
+    const newSrc = $(this).find('img').attr('src');
+    const newAlt = $(this).find('img').attr('alt');
+        
+    $('.hero img').attr('src', newSrc).attr('alt', newAlt);
+
+  });
+    
+}
+
+$(pictureChanger);
+
